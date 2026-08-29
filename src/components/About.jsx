@@ -202,7 +202,7 @@ export default function About() {
                 onClick={() => setActiveIdx(idx)}
                 className={`
                   group py-5 lg:py-6 transition-all duration-300 cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-3 md:gap-8 relative
-                  ${activeIdx === idx ? 'bg-ja-lavender/30 px-4 sm:px-6 rounded-2xl' : 'hover:pl-2 sm:hover:pl-4'}
+                  ${activeIdx === idx ? 'bg-ja-lavender/30 px-6 rounded-2xl -mx-6' : 'hover:pl-4'}
                 `}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

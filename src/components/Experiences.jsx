@@ -264,7 +264,7 @@ export default function Experiences() {
   }, [cursorX, cursorY]);
 
   return (
-    <section id="experiences" className="relative bg-[#21162F] text-white selection:bg-ja-purple/30 selection:text-white pb-32 overflow-hidden">
+    <section id="experiences" className="relative bg-[#21162F] text-white selection:bg-ja-purple/30 selection:text-white pb-32">
       
       {/* SVG Transition Divider from About Section */}
       <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 left-0 w-full h-[50px] md:h-[90px] lg:h-[120px] text-ja-lavender z-20 pointer-events-none" preserveAspectRatio="none">

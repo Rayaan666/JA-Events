@@ -310,10 +310,10 @@ export default function ContactFooter() {
       </div>
 
       {/* FOOTER SECTION */}
-      <footer className="relative bg-[#24152F] text-white pt-10 pb-12 z-10 overflow-hidden">
+      <footer className="relative bg-[#24152F] text-white pt-10 pb-12 z-10">
          
          {/* Huge Watermark Sparkle */}
-         <div className="absolute right-0 bottom-0 w-[50vw] h-[50vw] max-w-[600px] opacity-[0.08] text-white pointer-events-none select-none overflow-hidden">
+         <div className="absolute right-[-10%] bottom-0 w-[50vw] h-[50vw] max-w-[600px] opacity-[0.08] text-white pointer-events-none select-none">
             <Sparkle size={500} absolute={false} />
          </div>
 
