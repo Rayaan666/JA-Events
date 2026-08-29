@@ -157,12 +157,11 @@ function DesktopPanel({ exp, index, scrollYProgress }) {
 function MobilePanel({ exp, index }) {
   return (
     <motion.div 
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full h-[500px] overflow-hidden rounded-[32px] flex-shrink-0 group sticky top-24 shadow-2xl shadow-black/50"
-      style={{ zIndex: index }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="relative w-full h-[420px] overflow-hidden rounded-[28px] flex-shrink-0 group shadow-xl shadow-black/40"
     >
       <img 
         src={exp.image} 
@@ -265,7 +264,7 @@ export default function Experiences() {
   }, [cursorX, cursorY]);
 
   return (
-    <section id="experiences" className="relative bg-[#21162F] text-white selection:bg-ja-purple/30 selection:text-white pb-32">
+    <section id="experiences" className="relative bg-[#21162F] text-white selection:bg-ja-purple/30 selection:text-white pb-32 overflow-hidden">
       
       {/* SVG Transition Divider from About Section */}
       <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 left-0 w-full h-[50px] md:h-[90px] lg:h-[120px] text-ja-lavender z-20 pointer-events-none" preserveAspectRatio="none">

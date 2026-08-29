@@ -93,7 +93,7 @@ export default function About() {
 
           <motion.h2 
             variants={fadeUp}
-            className="font-sans text-[clamp(32px,4.5vw,72px)] leading-[1.06] text-ja-charcoal font-semibold tracking-tight max-w-5xl"
+            className="font-sans text-[clamp(26px,4.5vw,72px)] leading-[1.06] text-ja-charcoal font-semibold tracking-tight max-w-5xl"
           >
             We Don’t Just Organize Events.
             <span className="block font-serif italic text-ja-purple font-normal mt-1">
@@ -113,7 +113,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
           >
-            <motion.p variants={fadeUp} className="text-ja-charcoal text-lg sm:text-xl leading-relaxed font-medium">
+            <motion.p variants={fadeUp} className="text-ja-charcoal text-base sm:text-xl leading-relaxed font-medium">
               JA Events is built around one simple idea — every gathering should create something meaningful. From competitions and creative workshops to corporate experiences, we bring people together through moments designed to inspire, engage and connect.
             </motion.p>
             
@@ -136,7 +136,7 @@ export default function About() {
 
           {/* Right Seamless Media Display (Interactive smooth morphing image canvas) */}
           <motion.div 
-            className="lg:col-span-6 relative h-[320px] sm:h-[400px] w-full"
+            className="lg:col-span-6 relative h-[280px] sm:h-[400px] w-full"
             initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -190,7 +190,7 @@ export default function About() {
               The Four Pillars
             </span>
             <span className="text-xs text-ja-charcoal/50 font-medium">
-              Hover to explore our focus
+              Tap to explore our focus
             </span>
           </div>
 
@@ -199,9 +199,10 @@ export default function About() {
               <motion.div
                 key={idx}
                 onMouseEnter={() => setActiveIdx(idx)}
+                onClick={() => setActiveIdx(idx)}
                 className={`
                   group py-5 lg:py-6 transition-all duration-300 cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-3 md:gap-8 relative
-                  ${activeIdx === idx ? 'bg-ja-lavender/30 px-6 rounded-2xl -mx-6' : 'hover:pl-4'}
+                  ${activeIdx === idx ? 'bg-ja-lavender/30 px-4 sm:px-6 rounded-2xl' : 'hover:pl-2 sm:hover:pl-4'}
                 `}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
