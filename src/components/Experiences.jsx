@@ -314,7 +314,7 @@ export default function Experiences() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[clamp(36px,4.5vw,72px)] font-sans font-semibold leading-[1.05] tracking-tight"
+              className="text-[clamp(28px,4.5vw,72px)] font-sans font-semibold leading-[1.05] tracking-tight"
             >
               Different Experiences.<br />
               <span className="font-serif italic text-ja-purple/90 font-normal">One Purpose — Bring People Together.</span>

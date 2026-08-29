@@ -95,15 +95,15 @@ export default function ContactFooter() {
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(118,83,173,0.12)_0%,transparent_70%)] pointer-events-none z-0"
       />
 
-      <div className="container mx-auto px-6 lg:px-12 pt-48 pb-20 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 pt-24 sm:pt-36 lg:pt-48 pb-20 relative z-10">
         
         {/* Headline */}
-        <div className="text-center flex flex-col items-center max-w-[1200px] mx-auto mb-24">
+        <div className="text-center flex flex-col items-center max-w-[1200px] mx-auto mb-16 sm:mb-24">
           <div className="text-[10px] font-bold tracking-[0.3em] uppercase text-ja-purple mb-8 flex items-center gap-2">
             LET'S CREATE TOGETHER <Sparkle size={10} absolute={false} className="text-ja-purple" />
           </div>
 
-          <h2 className="text-[clamp(50px,9vw,145px)] font-sans font-semibold leading-[0.95] tracking-tighter text-ja-charcoal">
+          <h2 className="text-[clamp(32px,8vw,145px)] font-sans font-semibold leading-[0.95] tracking-tighter text-ja-charcoal">
             <motion.span initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="block">Have an idea?</motion.span>
             <motion.span initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="block font-serif italic text-ja-purple font-normal mt-2">
               Let's make it happen.

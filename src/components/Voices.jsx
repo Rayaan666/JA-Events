@@ -118,7 +118,7 @@ export default function Voices() {
       <div className="absolute bottom-[20%] left-[-10%] w-[500px] h-[500px] bg-[#4F327C]/15 rounded-full blur-[150px] pointer-events-none z-0" />
 
       {/* ── Section Header ── */}
-      <div className="px-8 lg:px-20 pt-36 lg:pt-48 pb-16 relative z-10">
+      <div className="px-4 sm:px-8 lg:px-20 pt-24 sm:pt-36 lg:pt-48 pb-16 relative z-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -133,11 +133,11 @@ export default function Voices() {
               </span>
             </div>
             <h2 className="font-bold leading-[0.95] tracking-tight text-white"
-              style={{ fontSize: 'clamp(36px, 4.5vw, 70px)' }}>
+              style={{ fontSize: 'clamp(28px, 4.5vw, 70px)' }}>
               The moments are ours to create.
             </h2>
             <h2 className="font-serif italic font-normal text-ja-purple leading-[1.1]"
-              style={{ fontSize: 'clamp(34px, 4.2vw, 66px)' }}>
+              style={{ fontSize: 'clamp(26px, 4.2vw, 66px)' }}>
               The stories belong to them.
             </h2>
           </motion.div>

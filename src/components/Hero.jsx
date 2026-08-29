@@ -58,7 +58,7 @@ export default function Hero() {
         {/* Main Headline */}
         <motion.h1 
           variants={textReveal}
-          className="font-serif text-[clamp(44px,6vw,96px)] leading-[1.05] text-white max-w-[1000px] mb-8 relative drop-shadow-[0_2px_15px_rgba(0,0,0,0.6)]"
+          className="font-serif text-[clamp(32px,6vw,96px)] leading-[1.05] text-white max-w-[1000px] mb-8 relative drop-shadow-[0_2px_15px_rgba(0,0,0,0.6)]"
         >
           Where Ideas Become
           <span className="block mt-2 relative inline-block">

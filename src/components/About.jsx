@@ -93,7 +93,7 @@ export default function About() {
 
           <motion.h2 
             variants={fadeUp}
-            className="font-sans text-[clamp(32px,4.5vw,72px)] leading-[1.06] text-ja-charcoal font-semibold tracking-tight max-w-5xl"
+            className="font-sans text-[clamp(28px,4.5vw,72px)] leading-[1.06] text-ja-charcoal font-semibold tracking-tight max-w-5xl"
           >
             We Don’t Just Organize Events.
             <span className="block font-serif italic text-ja-purple font-normal mt-1">
