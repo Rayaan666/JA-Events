@@ -157,11 +157,12 @@ function DesktopPanel({ exp, index, scrollYProgress }) {
 function MobilePanel({ exp, index }) {
   return (
     <motion.div 
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative w-full h-[420px] overflow-hidden rounded-[28px] flex-shrink-0 group shadow-xl shadow-black/40"
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="relative w-full h-[500px] overflow-hidden rounded-[32px] flex-shrink-0 group sticky top-24 shadow-2xl shadow-black/50"
+      style={{ zIndex: index }}
     >
       <img 
         src={exp.image} 

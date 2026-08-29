@@ -13,14 +13,14 @@ export default function Manifesto() {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <section id="manifesto" className="relative bg-[#F8F5FF] overflow-hidden flex flex-col min-h-screen px-5 sm:px-8 lg:px-20 xl:px-28 pt-16 lg:pt-20 pb-12">
+    <section className="relative bg-[#F8F5FF] overflow-hidden flex flex-col min-h-screen px-8 lg:px-20 xl:px-28 pt-20 pb-12">
 
       {/* Ghost orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-ja-purple/8 blur-[120px] pointer-events-none" />
 
       {/* Ghost quote mark */}
       <div
-        className="absolute right-4 lg:right-24 top-8 text-[clamp(140px,24vw,400px)] font-serif text-ja-purple/[0.04] leading-none pointer-events-none select-none"
+        className="absolute right-8 lg:right-24 top-8 text-[clamp(200px,28vw,400px)] font-serif text-ja-purple/[0.04] leading-none pointer-events-none select-none"
         aria-hidden
       >
         "
@@ -28,7 +28,7 @@ export default function Manifesto() {
 
       {/* ── Label ── */}
       <motion.div
-        className="flex items-center gap-4 mb-auto relative z-10 pt-4 sm:pt-0"
+        className="flex items-center gap-4 mb-auto relative z-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -42,33 +42,33 @@ export default function Manifesto() {
 
       {/* ── Main Headline ── */}
       <motion.div
-        className="relative z-10 my-auto py-8 lg:py-0"
+        className="relative z-10 my-auto"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.85, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <h2
-          className="font-bold leading-[0.95] tracking-[-0.025em] text-ja-charcoal"
-          style={{ fontSize: 'clamp(32px, 7vw, 118px)' }}
+          className="font-bold leading-[0.9] tracking-[-0.025em] text-ja-charcoal"
+          style={{ fontSize: 'clamp(52px, 7.5vw, 118px)' }}
         >
           The best events<br />aren't simply
         </h2>
         <h2
-          className="font-serif italic font-normal text-ja-purple leading-[0.98]"
-          style={{ fontSize: 'clamp(32px, 7vw, 118px)' }}
+          className="font-serif italic font-normal text-ja-purple leading-[0.95]"
+          style={{ fontSize: 'clamp(52px, 7.5vw, 118px)' }}
         >
           attended.
         </h2>
 
-        <p className="mt-6 sm:mt-8 text-ja-charcoal/60 text-sm sm:text-base lg:text-lg max-w-sm leading-relaxed font-medium">
+        <p className="mt-8 text-ja-charcoal/50 text-base lg:text-lg max-w-sm leading-relaxed">
           Every JA experience is shaped around the people taking part — to think, participate, discover, connect and celebrate.
         </p>
       </motion.div>
 
       {/* ── Five Principles ── */}
-      <div className="relative z-10 mt-auto pt-8 sm:pt-10 border-t border-ja-purple/[0.12]">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-6 gap-x-4 sm:gap-0 sm:divide-x divide-ja-purple/[0.1]">
+      <div className="relative z-10 mt-auto pt-10 border-t border-ja-purple/[0.12]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-0 divide-x divide-ja-purple/[0.1]">
           {principles.map((p, i) => (
             <motion.div
               key={p.id}

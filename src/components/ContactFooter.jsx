@@ -95,30 +95,30 @@ export default function ContactFooter() {
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(118,83,173,0.12)_0%,transparent_70%)] pointer-events-none z-0"
       />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 pt-20 sm:pt-28 lg:pt-48 pb-12 lg:pb-20 relative z-10">
+      <div className="container mx-auto px-6 lg:px-12 pt-48 pb-20 relative z-10">
         
         {/* Headline */}
-        <div className="text-center flex flex-col items-center max-w-[1200px] mx-auto mb-12 sm:mb-24">
-          <div className="text-[10px] font-bold tracking-[0.3em] uppercase text-ja-purple mb-6 sm:mb-8 flex items-center gap-2">
+        <div className="text-center flex flex-col items-center max-w-[1200px] mx-auto mb-24">
+          <div className="text-[10px] font-bold tracking-[0.3em] uppercase text-ja-purple mb-8 flex items-center gap-2">
             LET'S CREATE TOGETHER <Sparkle size={10} absolute={false} className="text-ja-purple" />
           </div>
 
-          <h2 className="text-[clamp(32px,8vw,145px)] font-sans font-semibold leading-[0.98] tracking-tighter text-ja-charcoal">
+          <h2 className="text-[clamp(50px,9vw,145px)] font-sans font-semibold leading-[0.95] tracking-tighter text-ja-charcoal">
             <motion.span initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="block">Have an idea?</motion.span>
             <motion.span initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="block font-serif italic text-ja-purple font-normal mt-2">
               Let's make it happen.
-              <motion.span initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.5 }} className="inline-block ml-2 sm:ml-4 align-middle">
-                 <Sparkle size={20} className="text-ja-purple" absolute={false} />
+              <motion.span initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.5 }} className="inline-block ml-4 align-middle">
+                 <Sparkle size={24} className="text-ja-purple" absolute={false} />
               </motion.span>
             </motion.span>
           </h2>
         </div>
 
         {/* Playful Floating Options */}
-        <div className="flex flex-col items-center mb-16 sm:mb-32">
-          <div className="text-[10px] font-bold tracking-[0.25em] text-ja-charcoal/40 uppercase mb-8 sm:mb-12">WHAT ARE WE CREATING?</div>
+        <div className="flex flex-col items-center mb-32">
+          <div className="text-[10px] font-bold tracking-[0.25em] text-ja-charcoal/40 uppercase mb-12">WHAT ARE WE CREATING?</div>
           
-          <div className="flex flex-wrap justify-center gap-x-4 sm:gap-x-8 gap-y-4 sm:gap-y-6 max-w-[900px] text-center">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-6 max-w-[900px] text-center">
              {eventTypes.map((type) => {
                const isSelected = selectedType === type;
                return (
@@ -126,7 +126,7 @@ export default function ContactFooter() {
                    key={type}
                    onClick={() => setSelectedType(type)}
                    data-hover-cursor
-                   className={`relative text-lg sm:text-2xl lg:text-[34px] font-serif transition-all duration-300 px-3 sm:px-4 py-1.5 sm:py-2 ${
+                   className={`relative text-2xl lg:text-[34px] font-serif transition-all duration-300 px-4 py-2 ${
                      isSelected ? 'text-ja-purple italic font-semibold' : 'text-ja-charcoal/60 hover:text-ja-purple hover:scale-102'
                    }`}
                  >
@@ -142,7 +142,7 @@ export default function ContactFooter() {
         </div>
 
         {/* Conversational Contact Form */}
-        <div className="max-w-[800px] mx-auto bg-white/40 backdrop-blur-xl p-5 sm:p-8 lg:p-16 rounded-3xl lg:rounded-[40px] shadow-[0_30px_80px_rgba(118,83,173,0.04)] border border-ja-lavender/30 mb-16 sm:mb-32">
+        <div className="max-w-[800px] mx-auto bg-white/40 backdrop-blur-xl p-8 lg:p-16 rounded-[40px] shadow-[0_30px_80px_rgba(118,83,173,0.04)] border border-ja-lavender/30 mb-32">
            <div className="mb-12">
               <h3 className="text-3xl lg:text-[44px] font-serif text-ja-charcoal leading-tight mb-4">
                 Tell us a little<br/>about your idea.

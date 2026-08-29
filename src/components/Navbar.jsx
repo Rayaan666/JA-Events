@@ -22,13 +22,13 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-4 md:top-6 left-0 right-0 z-50 px-3 sm:px-4 md:px-8 max-w-7xl mx-auto w-full"
+        className="fixed top-6 left-0 right-0 z-50 px-4 md:px-8 max-w-7xl mx-auto w-full"
       >
-        <div className="flex items-center justify-between bg-white/80 backdrop-blur-xl border border-white/40 shadow-[0_8px_32px_rgba(118,83,173,0.08)] rounded-full px-4 sm:px-6 py-2.5 sm:py-3">
+        <div className="flex items-center justify-between bg-white/80 backdrop-blur-xl border border-white/40 shadow-[0_8px_32px_rgba(118,83,173,0.08)] rounded-full px-6 py-3">
           
           {/* Logo */}
           <a href="#home" className="flex items-center relative z-50">
-            <img src="/logo.png" alt="JA Events Logo" className="h-8 sm:h-10 w-auto" />
+            <img src="/logo.png" alt="JA Events Logo" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Links */}
@@ -89,7 +89,7 @@ export default function Navbar() {
             animate={{ opacity: 1, clipPath: 'circle(150% at 100% 0)' }}
             exit={{ opacity: 0, clipPath: 'circle(0% at 100% 0)' }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-40 bg-ja-lavender/95 backdrop-blur-2xl flex flex-col justify-center px-6 py-20 overflow-y-auto"
+            className="fixed inset-0 z-40 bg-ja-lavender/95 backdrop-blur-2xl flex flex-col justify-center px-8"
           >
             {/* Background Sparkles */}
             <Sparkle className="top-1/4 left-10" size={32} delay={0.2} />

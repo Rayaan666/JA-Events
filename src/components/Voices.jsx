@@ -118,7 +118,7 @@ export default function Voices() {
       <div className="absolute bottom-[20%] left-[-10%] w-[500px] h-[500px] bg-[#4F327C]/15 rounded-full blur-[150px] pointer-events-none z-0" />
 
       {/* ── Section Header ── */}
-      <div className="px-5 sm:px-8 lg:px-20 pt-20 sm:pt-28 lg:pt-48 pb-10 sm:pb-16 relative z-10">
+      <div className="px-8 lg:px-20 pt-36 lg:pt-48 pb-16 relative z-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -133,11 +133,11 @@ export default function Voices() {
               </span>
             </div>
             <h2 className="font-bold leading-[0.95] tracking-tight text-white"
-              style={{ fontSize: 'clamp(28px, 4.5vw, 70px)' }}>
+              style={{ fontSize: 'clamp(36px, 4.5vw, 70px)' }}>
               The moments are ours to create.
             </h2>
             <h2 className="font-serif italic font-normal text-ja-purple leading-[1.1]"
-              style={{ fontSize: 'clamp(26px, 4.2vw, 66px)' }}>
+              style={{ fontSize: 'clamp(34px, 4.2vw, 66px)' }}>
               The stories belong to them.
             </h2>
           </motion.div>
@@ -153,14 +153,14 @@ export default function Voices() {
         
         {/* Row 1 (Faster Scroll) */}
         <div className="flex overflow-hidden group">
-          <div className="flex animate-scroll-fast group-hover:[animation-play-state:paused] whitespace-nowrap gap-4 sm:gap-6 lg:gap-8 min-w-max px-4 sm:px-6">
+          <div className="flex animate-scroll-fast group-hover:[animation-play-state:paused] whitespace-nowrap gap-6 lg:gap-8 min-w-max px-6">
             {row1.map((t, idx) => (
               <div
                 key={`r1-${t.id}-${idx}`}
-                className="w-[270px] sm:w-[360px] md:w-[420px] shrink-0 p-6 sm:p-10 rounded-2xl sm:rounded-[32px] bg-white/[0.03] border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.15)] hover:border-ja-purple/50 hover:bg-white/[0.06] transition-all duration-300 flex flex-col justify-between whitespace-normal"
+                className="w-[310px] sm:w-[360px] md:w-[420px] shrink-0 p-8 sm:p-10 rounded-[32px] bg-white/[0.03] border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.15)] hover:border-ja-purple/50 hover:bg-white/[0.06] transition-all duration-300 flex flex-col justify-between whitespace-normal"
               >
                 <div>
-                  <div className="flex justify-between items-center mb-6 sm:mb-8">
+                  <div className="flex justify-between items-center mb-8">
                     <span className="text-[10px] font-bold tracking-[0.25em] text-ja-purple/50 uppercase">
                       {t.event}
                     </span>
@@ -168,7 +168,7 @@ export default function Voices() {
                       {t.number}
                     </span>
                   </div>
-                  <blockquote className="font-serif text-white/90 text-base sm:text-xl md:text-2xl leading-relaxed mb-6 sm:mb-10">
+                  <blockquote className="font-serif text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed mb-10">
                     "{t.quote}"
                   </blockquote>
                 </div>
@@ -185,11 +185,11 @@ export default function Voices() {
 
         {/* Row 2 (Slower Scroll) */}
         <div className="flex overflow-hidden group">
-          <div className="flex animate-scroll-slow group-hover:[animation-play-state:paused] whitespace-nowrap gap-4 sm:gap-6 lg:gap-8 min-w-max px-4 sm:px-6">
+          <div className="flex animate-scroll-slow group-hover:[animation-play-state:paused] whitespace-nowrap gap-6 lg:gap-8 min-w-max px-6">
             {row2.map((t, idx) => (
               <div
                 key={`r2-${t.id}-${idx}`}
-                className="w-[270px] sm:w-[360px] md:w-[420px] shrink-0 p-6 sm:p-10 rounded-2xl sm:rounded-[32px] bg-white/[0.03] border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.15)] hover:border-ja-purple/50 hover:bg-white/[0.06] transition-all duration-300 flex flex-col justify-between whitespace-normal"
+                className="w-[310px] sm:w-[360px] md:w-[420px] shrink-0 p-8 sm:p-10 rounded-[32px] bg-white/[0.03] border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.15)] hover:border-ja-purple/50 hover:bg-white/[0.06] transition-all duration-300 flex flex-col justify-between whitespace-normal"
               >
                 <div>
                   <div className="flex justify-between items-center mb-8">
