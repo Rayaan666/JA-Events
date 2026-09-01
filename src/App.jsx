@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AngelJoeIntro from './components/AngelJoeIntro';
 import About from './components/About';
 import Experiences from './components/Experiences';
 import Manifesto from './components/Manifesto';
@@ -12,6 +13,7 @@ function App() {
     <main className="min-h-screen bg-ja-light font-sans text-ja-charcoal selection:bg-ja-purple/20 selection:text-ja-deep">
       <Navbar />
       <Hero />
+      <AngelJoeIntro />
       <About />
       <Experiences />
       <Manifesto />
