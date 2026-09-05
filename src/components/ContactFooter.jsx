@@ -355,12 +355,19 @@ export default function ContactFooter() {
                   <div className="text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase mb-2">LET'S TALK</div>
                   <ul className="flex flex-col gap-4">
                      <li>
-                        <a href="mailto:hello@jaevents.com" className="text-sm font-semibold tracking-[0.1em] text-white/80 hover:text-white transition-colors">
-                           hello@jaevents.com
+                        <a href="mailto:Angelbiztalks@gmail.com" className="text-sm font-semibold tracking-[0.1em] text-white/80 hover:text-ja-purple transition-colors">
+                           Angelbiztalks@gmail.com
                         </a>
                      </li>
-                     <li className="text-sm text-white/60 font-semibold tracking-[0.1em]">
-                        +1 (555) 019-2834
+                     <li>
+                        <a 
+                          href="https://wa.me/971528394207" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-sm font-semibold tracking-[0.1em] text-white/80 hover:text-[#25D366] transition-colors flex items-center gap-2"
+                        >
+                           <span>WhatsApp: +971 52 839 4207</span>
+                        </a>
                      </li>
                      <li className="text-sm text-white/60 font-semibold tracking-[0.1em]">
                         Based in Dubai, UAE
@@ -421,8 +428,12 @@ export default function ContactFooter() {
 
             {/* Bottom bar */}
             <div className="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase">
-               <div>
-                  © {new Date().getFullYear()} JA EVENTS
+               <div className="flex items-center gap-4">
+                  <span>© {new Date().getFullYear()} JA EVENTS</span>
+                  <span>•</span>
+                  <a href="#privacy" className="hover:text-white transition-colors">
+                     PRIVACY POLICY
+                  </a>
                </div>
                <div className="text-center font-normal tracking-[0.1em] text-white/30 hidden md:block">
                   CREATING EXPERIENCES THAT STAY WITH YOU

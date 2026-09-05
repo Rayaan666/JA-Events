@@ -28,7 +28,7 @@ export default function Navbar() {
           
           {/* Logo */}
           <a href="#home" className="flex items-center relative z-50">
-            <img src="/logo.png" alt="JA Events Logo" className="h-10 w-auto" />
+            <img src="/logo.png" alt="JA Events Logo" className="h-11 md:h-14 w-auto object-contain" />
           </a>
 
           {/* Desktop Links */}
