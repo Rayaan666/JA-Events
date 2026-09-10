@@ -36,7 +36,7 @@ export default function AngelJoeIntro() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full bg-[#FCFAFE] overflow-hidden py-24 lg:py-40"
+      className="relative w-full bg-[#FCFAFE] overflow-hidden py-10 lg:py-14"
       id="angel-joe"
     >
       {/* Soft Ambient Orbs */}
@@ -50,10 +50,10 @@ export default function AngelJoeIntro() {
       />
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           
           {/* Visual Column - The Reveal */}
-          <div className="w-full lg:w-5/12 relative flex justify-center lg:justify-start pt-10 lg:pt-0">
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-start pt-10 lg:pt-0">
             
             {/* Background Giant Typography */}
             <motion.div 
@@ -69,7 +69,7 @@ export default function AngelJoeIntro() {
             </motion.div>
 
             <motion.div 
-              className="relative z-10 w-full max-w-[400px] lg:max-w-[460px] aspect-[4/5] lg:ml-12"
+              className="relative z-10 w-full max-w-[460px] lg:max-w-[560px] aspect-[4/5] lg:ml-4"
               initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
               whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
               viewport={{ once: true, margin: "-100px" }}
@@ -85,7 +85,7 @@ export default function AngelJoeIntro() {
                    transition={{ duration: 0.8, ease: "easeOut" }}
                    src="/founder.png" 
                    alt="Angel Joe"
-                   className="w-full h-full object-cover"
+                   className="w-full h-full object-cover object-top"
                  />
                  {/* Subtle gradient overlay for depth */}
                  <div className="absolute inset-0 bg-gradient-to-tr from-ja-purple/20 via-transparent to-transparent opacity-60 mix-blend-overlay pointer-events-none" />
@@ -93,18 +93,18 @@ export default function AngelJoeIntro() {
               
               {/* Overlapping Quote Glass Card */}
               <motion.div 
-                 className="absolute -bottom-10 -right-4 lg:-right-12 bg-white/70 backdrop-blur-xl p-6 lg:p-8 rounded-3xl shadow-[0_20px_40px_rgba(79,50,124,0.1)] border border-white max-w-[260px] lg:max-w-[280px] z-20"
+                 className="absolute -bottom-8 -right-2 lg:-right-8 bg-white/75 backdrop-blur-xl p-6 lg:p-8 rounded-3xl shadow-[0_20px_40px_rgba(79,50,124,0.12)] border border-white max-w-[290px] lg:max-w-[340px] z-20"
                  initial={{ opacity: 0, x: 20, y: 20 }}
                  whileInView={{ opacity: 1, x: 0, y: 0 }}
                  viewport={{ once: true, margin: "-50px" }}
                  transition={{ delay: 0.4, duration: 0.8 }}
                  whileHover={{ y: -5 }}
               >
-                 <Sparkle className="text-ja-purple mb-4" size={16} delay={0.8} />
-                 <p className="font-serif text-ja-charcoal text-[17px] lg:text-[19px] leading-[1.3] italic">
+                 <Sparkle className="text-ja-purple mb-4" size={18} delay={0.8} />
+                 <p className="font-serif text-ja-charcoal text-[18px] lg:text-[21px] leading-[1.35] italic">
                    “I want people to leave with more than a memory.”
                  </p>
-                 <p className="text-[10px] text-ja-purple/40 font-bold uppercase tracking-widest mt-4">
+                 <p className="text-[11px] text-ja-purple/50 font-bold uppercase tracking-widest mt-4">
                    it always starts with an idea ✦
                  </p>
               </motion.div>
@@ -113,7 +113,7 @@ export default function AngelJoeIntro() {
 
           {/* Content Column - Focused Typography */}
           <motion.div 
-            className="w-full lg:w-7/12 flex flex-col items-start z-20 lg:pl-10"
+            className="w-full lg:w-1/2 flex flex-col items-start z-20 lg:pl-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}

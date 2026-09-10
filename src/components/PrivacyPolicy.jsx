@@ -220,9 +220,9 @@ export default function PrivacyPolicy({ onBack }) {
               </li>
             </ul>
             <p className="text-white/70 text-sm">
-              Requests can be submitted directly through our website’s contact form or by emailing us at{' '}
-              <a href="mailto:Angelbiztalks@gmail.com" className="text-ja-purple underline hover:text-white">
-                Angelbiztalks@gmail.com
+              Requests can be submitted directly through our website’s contact form or via WhatsApp at{' '}
+              <a href="https://wa.me/971528394207" target="_blank" rel="noopener noreferrer" className="text-ja-purple underline hover:text-white">
+                +971 52 839 4207
               </a>.
             </p>
           </div>

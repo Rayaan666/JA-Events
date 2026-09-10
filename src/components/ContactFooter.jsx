@@ -191,7 +191,7 @@ export default function ContactFooter() {
                         required
                         value={formData.contact}
                         onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
-                        placeholder="Email address / phone" 
+                        placeholder="Phone / WhatsApp number" 
                         onFocus={() => setFocusedField('contact')}
                         onBlur={() => setFocusedField(null)}
                         className="w-full bg-transparent border-none text-2xl lg:text-3xl text-ja-charcoal font-serif placeholder-ja-charcoal/20 focus:outline-none pb-2"
@@ -292,10 +292,12 @@ export default function ContactFooter() {
         <div className="text-center flex flex-col items-center">
            <div className="text-[9px] font-bold tracking-[0.3em] text-ja-charcoal/40 uppercase mb-3">PREFER TO TALK DIRECTLY?</div>
            <a 
-             href="mailto:hello@jaevents.com" 
-             className="text-sm font-bold tracking-[0.25em] text-ja-purple uppercase relative group inline-flex items-center gap-2"
+             href="https://wa.me/971528394207" 
+             target="_blank"
+             rel="noopener noreferrer"
+             className="text-sm font-bold tracking-[0.25em] text-ja-purple hover:text-[#25D366] uppercase relative group inline-flex items-center gap-2 transition-colors"
            >
-              START AN EMAIL CONVERSATION ↗
+              CHAT ON WHATSAPP ↗
               <span className="absolute -bottom-2 left-0 w-full h-[2px] bg-ja-purple scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
            </a>
         </div>
@@ -354,11 +356,6 @@ export default function ContactFooter() {
                <div className="flex flex-col gap-6">
                   <div className="text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase mb-2">LET'S TALK</div>
                   <ul className="flex flex-col gap-4">
-                     <li>
-                        <a href="mailto:Angelbiztalks@gmail.com" className="text-sm font-semibold tracking-[0.1em] text-white/80 hover:text-ja-purple transition-colors">
-                           Angelbiztalks@gmail.com
-                        </a>
-                     </li>
                      <li>
                         <a 
                           href="https://wa.me/971528394207" 
