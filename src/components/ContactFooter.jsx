@@ -377,17 +377,17 @@ export default function ContactFooter() {
                   <div className="text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase mb-2">FOLLOW THE MOMENTS</div>
                   <ul className="flex flex-col gap-4">
                      <li>
-                        <a href="#" className="text-sm font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group flex items-center gap-2">
+                        <a href="https://www.instagram.com/eventswithja" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group flex items-center gap-2">
                            INSTAGRAM ↗
                         </a>
                      </li>
                      <li>
-                        <a href="#" className="text-sm font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group flex items-center gap-2">
+                        <a href="https://www.facebook.com/eventswithja" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group flex items-center gap-2">
                            FACEBOOK ↗
                         </a>
                      </li>
                      <li>
-                        <a href="#" className="text-sm font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group flex items-center gap-2">
+                        <a href="https://www.linkedin.com/company/jaeventsuae/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group flex items-center gap-2">
                            LINKEDIN ↗
                         </a>
                      </li>
