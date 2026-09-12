@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import UpcomingHighlight from './components/UpcomingHighlight';
 import AngelJoeIntro from './components/AngelJoeIntro';
 import About from './components/About';
 import Experiences from './components/Experiences';
@@ -39,6 +40,7 @@ function App() {
     <main className="min-h-screen bg-ja-light font-sans text-ja-charcoal selection:bg-ja-purple/20 selection:text-ja-deep">
       <Navbar />
       <Hero />
+      <UpcomingHighlight />
       <AngelJoeIntro />
       <About />
       <Experiences />

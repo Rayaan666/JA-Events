@@ -5,6 +5,7 @@ import Sparkle from './Sparkle';
 
 const navLinks = [
   { title: 'Home', href: '#home' },
+  { title: 'Upcoming', href: '#upcoming' },
   { title: 'About', href: '#about' },
   { title: 'Experiences', href: '#experiences' },
   { title: 'Gallery', href: '#gallery' },
